@@ -5,18 +5,48 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
     {
         type: "input",
-        message: "What is your user name?",
+        message: "What is your project title?",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "Describe the project",
+        name: "description"
+    },
+    {
+        type: "input",
+        message: "Describe the project's installation process",
+        name: "installation"
+    },
+    {
+        type: "input",
+        message: "Describe the project's usage information",
+        name: "usage"
+    }, 
+    {
+        type: "input",
+        message: "Describe the project's contribution guidelines",
+        name: "contribution"
+    },
+    {
+        type: "input",
+        message: "Describe the project's test instructions?",
+        name: "tests"
+    },
+    {
+        type: "input",
+        message: "What's your project's license?",
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "Enter your GitHub username",
         name: "username"
     },
     {
-        type: "password",
-        message: "What is your password?",
-        name: "password"
-    },
-    {
-        type: "password",
-        message: "Re-enter password to confirm:",
-        name: "confirm"
+        type: "input",
+        message: "Enter your email adress",
+        name: "email"
     }
 ];
 
@@ -30,7 +60,8 @@ function init() {
     inquirer
     .prompt(questions)
     .then(function (response) {
-        console.log(response);
+        var markdown = generateMarkdown(response);
+        console.log(markdown);
     });
 }
 
