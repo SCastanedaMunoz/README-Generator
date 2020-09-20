@@ -1,6 +1,6 @@
 {
   "name": "readme-generator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A command-line application that allows for quick and easy generation of a project README to focus more time .",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "GitHub"
   ],
   "author": "Santiago Castaneda Munoz",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SCastanedaMunoz/README-Generator/issues"
   },
