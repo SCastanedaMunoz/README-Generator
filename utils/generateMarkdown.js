@@ -24,13 +24,13 @@ function generateMarkdown(data) {
 ${data.description}
 
 ## **Table of Contents**
-1. [Description](##Description)
-2. [Installation](##Installation)
-3. [Usage](##Usage)
-4. [License](##License)
-5. [Contributing](##Contributing)
-6. [Tests](##Tests)
-7. [Questions](##Questions)
+* [Description](##Description)
+* [Installation](##Installation)
+* [Usage](##Usage)
+* [License](##License)
+* [Contributing](##Contributing)
+* [Tests](##Tests)
+* [Questions](##Questions)
 
 ## **Installation**
 ${data.installation}
@@ -57,7 +57,7 @@ ${data.questioning}
 https://github.com/${data.username}
 
 ### ***Email Contact***
-Email: ${data.email}`;
+${data.email}`;
       resolve(markDownContent);
     });
   });
