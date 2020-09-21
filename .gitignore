@@ -105,3 +105,6 @@ dist
 
 # DS Store folder
 DS_Store/
+
+# Outputs Local folder
+outputs/
