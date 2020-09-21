@@ -18,12 +18,12 @@ function generateMarkdown(data) {
       var markDownContent =
 `![License: ${data.license.name}](${data.license.badge})
 
-# ${data.title}
+# **${data.title}**
 
-## Description
+## **Description**
 ${data.description}
 
-## Table of Contents
+## **Table of Contents**
 1. [Description](##Description)
 2. [Installation](##Installation)
 3. [Usage](##Usage)
@@ -32,26 +32,31 @@ ${data.description}
 6. [Tests](##Tests)
 7. [Questions](##Questions)
 
-## Installation
+## **Installation**
 ${data.installation}
 
-## Usage
+## **Usage**
 ${data.usage}
 
-## License
+## **License**
+
+This project is under the ${data.license.name} License:
+
 ${licenseContents}
 
-## Contributing
+## **Contributing**
 ${data.contribution}
 
-## Tests
+## **Tests**
 ${data.tests}
 
-## Questions
+## **Questions**
 ${data.questioning}
 
+### ***GitHub Profile***
 https://github.com/${data.username}
 
+### ***Email Contact***
 Email: ${data.email}`;
       resolve(markDownContent);
     });

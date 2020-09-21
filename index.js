@@ -123,8 +123,8 @@ init();
 //     username: 'SCastanedaMunoz',
 //     devname: 'Santiago Castaneda Munoz',
 //     email: 'santiagocm98@hotmail.com',
-//     questioning: 'Email',
-//     filename: 'test_zlib'
+//     questioning: 'Sned info through emails',
+//     filename: 'README_SAMPLE'
 // }
 
 // generateMarkdown(sample)
