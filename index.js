@@ -44,7 +44,7 @@ const questions = [
             { name: "GNU GPLv3", value: { name: "GNU GPLv3", badge: "https://img.shields.io/badge/License-GPLv3-blue.svg" } },
             { name: "ISC", value: { name: "ISC", badge: "https://img.shields.io/badge/License-ISC-blue.svg" } },
             { name: "MIT", value: { name: "MIT", badge: "https://img.shields.io/badge/License-MIT-yellow.svg" } },
-            { name: "Unlicense", value: { name: "Unlicense", badge: "https://img.shields.io/badge/license-Unlicense-blue.svg" } },
+            { name: "Unlicense", value: { name: "Unlicense", badge: "https://img.shields.io/badge/License-Unlicense-blue.svg" } },
             { name: "Zlib", value: { name: "Zlib", badge: "https://img.shields.io/badge/License-Zlib-lightgrey.svg" } }
         ]
     },
