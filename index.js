@@ -44,7 +44,7 @@ const questions = [
             { name: "GNU GPLv3", value: { name: "GNU GPLv3", badge: "https://img.shields.io/badge/License-GPLv3-blue.svg" } },
             { name: "ISC", value: { name: "ISC", badge: "https://img.shields.io/badge/License-ISC-blue.svg" } },
             { name: "MIT", value: { name: "MIT", badge: "https://img.shields.io/badge/License-MIT-yellow.svg" } },
-            { name: "Unlicense", value: { name: "Unlicense", badge: "https://img.shields.io/badge/License-WTFPL-brightgreen.svg" } },
+            { name: "Unlicense", value: { name: "Unlicense", badge: "https://img.shields.io/badge/license-Unlicense-blue.svg" } },
             { name: "Zlib", value: { name: "Zlib", badge: "https://img.shields.io/badge/License-Zlib-lightgrey.svg" } }
         ]
     },
@@ -86,7 +86,6 @@ function writeToFile(fileName, data) {
                 console.log(`Error: ${err}`)
                 return;
             }
-            console.log("Outputs Directory Not Found, Creating a New One!");
         });
     }
 
@@ -104,11 +103,29 @@ function init() {
     inquirer
         .prompt(questions)
         .then(function (response) {
-            var markdown = generateMarkdown(response);
-            writeToFile(response.filename, markdown);
+            generateMarkdown(response)
+            .then((markDownContent) => writeToFile(response.filename, markDownContent));
         });
 }
 
 // function call to initialize program
 init();
 
+// Uncomment this code to run Sample Test
+// sample = {
+//     title: 'README Generator',
+//     description: 'This Project is a test for the README Generator',
+//     installation: 'Clone the Github Repository and Run npm i',
+//     usage: 'This project can be used to easily create README.md files',
+//     contribution: "Go to the Project's Repository and Create a Pull Request",
+//     tests: 'Use node index.js to run the cli application',
+//     license: { name: "Zlib", badge: "https://img.shields.io/badge/License-Zlib-lightgrey.svg" }  ,
+//     username: 'SCastanedaMunoz',
+//     devname: 'Santiago Castaneda Munoz',
+//     email: 'santiagocm98@hotmail.com',
+//     questioning: 'Email',
+//     filename: 'test_zlib'
+// }
+
+// generateMarkdown(sample)
+// .then((markDownContent) => writeToFile(sample.filename, markDownContent));

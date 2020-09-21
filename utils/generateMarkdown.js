@@ -1,9 +1,21 @@
+const fs = require("fs");
+
 // function to generate markdown for README
 function generateMarkdown(data) {
 
-    console.log(data);
+  return new Promise(function (resolve, reject) {
+    var licenseContents = "";
 
-    var markDownContent =
+    fs.readFile(`./utils/licenses/${data.license.name}.txt`, "utf-8", (err, licenseData) => {
+      if (err) {
+        return reject(err);
+      }
+      licenseContents = licenseData;
+      var currentDate = new Date();
+      licenseContents = licenseContents.replace("[yyyy]", currentDate.getFullYear());
+      licenseContents = licenseContents.replace("[Copyright_Owner]", data.devname);
+
+      var markDownContent =
 `![License: ${data.license.name}](${data.license.badge})
 
 # ${data.title}
@@ -27,7 +39,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.license}
+${licenseContents}
 
 ## Contributing
 ${data.contribution}
@@ -41,8 +53,9 @@ ${data.questioning}
 https://github.com/${data.username}
 
 Email: ${data.email}`;
+      resolve(markDownContent);
+    });
+  });
+}
 
-    return markDownContent;
-  }
-  
 module.exports = generateMarkdown;
