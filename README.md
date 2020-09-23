@@ -20,6 +20,8 @@ As of right now, the process to install ***README Generator*** is by downloading
 ## **Usage**
 As mentioned before, The main purpose of this CLI application is to reduce the time developers spend writting **README** files and allow them to use more of their time actually developing their apps. Although, a lot of can be achieved by using this **CLI Application**, this is purely intented to create a well structured base for your **README** files, there is always room for improvement so do not take any outputs as a final product! Make your **README** files richer and better!
 
+Here is a Video Walkthrough on how to use the app: [Video Walkthrough.](https://drive.google.com/file/d/1M4yuWK0EnRpK7FxjzW89TGU2qR9TFmu3/view?usp=sharing)
+
 ## **License**
 
 This project is under the ISC License:
