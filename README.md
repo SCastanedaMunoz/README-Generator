@@ -51,13 +51,10 @@ As of right now, the only way to test the application is by running the node ind
 See the following test instructions in order to test the app: 
 
 1. Select the App Folder.
-
     ![](./docs/cd_step.png)
 2. Call *node index.js** to start the app.
-
     ![](./docs/node_step.png)
 3. Start answering the questionarie to obtain your **README** file.
-
     ![](./docs/question_step.png)
 
 ## **Questions**
