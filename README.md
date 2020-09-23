@@ -58,7 +58,7 @@ See the following test instructions in order to test the app:
     ![](./docs/node_step.png)
 3. Start answering the questionarie to obtain your **README** file.
 
-    ![](./docs/start_step.png)
+    ![](./docs/question_step.png)
 
 ## **Questions**
 If you have any questions regarding this app, feel free to contact me through my email, the [README Generator Repo](https://github.com/SCastanedaMunoz/README-Generator). All questions will be answered in a reasonable amount of time.
