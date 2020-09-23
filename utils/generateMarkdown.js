@@ -4,18 +4,18 @@ const fs = require("fs");
 function generateMarkdown(data) {
 
   return new Promise(function (resolve, reject) {
-    var licenseContents = "";
+    let licenseContents = "";
 
     fs.readFile(`./utils/licenses/${data.license.name}.txt`, "utf-8", (err, licenseData) => {
       if (err) {
         return reject(err);
       }
       licenseContents = licenseData;
-      var currentDate = new Date();
+      let currentDate = new Date();
       licenseContents = licenseContents.replace("[yyyy]", currentDate.getFullYear());
       licenseContents = licenseContents.replace("[Copyright_Owner]", data.devname);
 
-      var markdownContent =
+      let markdownContent =
 `![License: ${data.license.name}](${data.license.badge})
 
 # **${data.title}**
@@ -57,7 +57,7 @@ ${data.questioning}
 https://github.com/${data.username}
 
 ### ***Email Contact***
-${data.email}`;
+[${data.email}](mailto:${data.email})`;
       let ret = {
         filename: data.filename,
         markdown: markdownContent

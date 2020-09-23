@@ -98,6 +98,7 @@ function writeToFile(fileName, data) {
 
 // Function to initialize program
 function init() {
+    console.log("\x1b[36m","Starting README Questionaire (MarkDown Supported), Answer the Following Questions to Obtain a README File:");
     inquirer
         .prompt(questions)
         .then(response => generateMarkdown(response))
