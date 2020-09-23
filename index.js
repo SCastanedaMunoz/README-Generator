@@ -6,37 +6,37 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 const questions = [
     {
         type: "input",
-        message: "What is your project title?",
+        message: "Enter the Project's Title",
         name: "title"
     },
     {
         type: "input",
-        message: "Describe the project",
+        message: "Describe the Project",
         name: "description"
     },
     {
         type: "input",
-        message: "Describe the project's installation process",
+        message: "Describe the Installation Process",
         name: "installation"
     },
     {
         type: "input",
-        message: "Describe the project's usage information",
+        message: "Describe the Usage Information",
         name: "usage"
     },
     {
         type: "input",
-        message: "Describe the project's contribution guidelines",
+        message: "Describe the Contribution Guidelines",
         name: "contribution"
     },
     {
         type: "input",
-        message: "Describe the project's test instructions?",
+        message: "Describe the Test Instructions",
         name: "tests"
     },
     {
         type: "list",
-        message: "What's your project's license?",
+        message: "Choose Your Project's License",
         name: "license",
         choices: [
             { name: "Apache", value: { name: "Apache", badge: "https://img.shields.io/badge/License-Apache%202.0-blue.svg" } },
@@ -50,27 +50,27 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter your GitHub username",
+        message: "Enter Your GitHub Username",
         name: "username"
     },
     {
         type: "input",
-        message: "Enter your name",
+        message: "Enter Your Name",
         name: "devname"
     },
     {
         type: "input",
-        message: "Enter your Email adress",
+        message: "Enter Your Email Address",
         name: "email"
     },
     {
         type: "input",
-        message: "How to contact in case of questions?",
+        message: "How Should People Contact You in Case of Questions?",
         name: "questioning"
     },
     {
         type: "input",
-        message: "How would you like to name your README file?",
+        message: "How Would You Like to Name Your README File?",
         name: "filename"
     }
 ];
@@ -83,16 +83,14 @@ function writeToFile(fileName, data) {
     if (!fs.existsSync(outputsDir)) {
         fs.mkdir(outputsDir, err => {
             if (err) {
-                console.log(`Error: ${err}`)
-                return;
+                throw Error(err);
             }
         });
     }
 
     fs.writeFile(`${outputsDir}/${fileName}.md`, data, "utf-8", err => {
         if (err) {
-            console.log(`Error: ${err}`)
-            return;
+            throw Error(err);
         }
         console.log(`${fileName}.md saved to outputs folder!`);
     });
