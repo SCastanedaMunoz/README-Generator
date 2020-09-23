@@ -106,22 +106,3 @@ function init() {
 
 // function call to initialize program
 init();
-
-// Uncomment this code to run Sample Test
-// sample = {
-//     title: 'README Generator',
-//     description: 'This Project is a test for the README Generator',
-//     installation: 'Clone the Github Repository and Run npm i',
-//     usage: 'This project can be used to easily create README.md files',
-//     contribution: "Go to the Project's Repository and Create a Pull Request",
-//     tests: 'Use node index.js to run the cli application',
-//     license: { name: "Zlib", badge: "https://img.shields.io/badge/License-Zlib-lightgrey.svg" }  ,
-//     username: 'SCastanedaMunoz',
-//     devname: 'Santiago Castaneda Munoz',
-//     email: 'santiagocm98@hotmail.com',
-//     questioning: 'Sned info through emails',
-//     filename: 'README_SAMPLE'
-// }
-
-// generateMarkdown(sample)
-// .then((data) => writeToFile(data.filename, data.markdown));
