@@ -51,11 +51,14 @@ As of right now, the only way to test the application is by running the node ind
 See the following test instructions in order to test the app: 
 
 1. Select the App Folder.
-![](./docs/cd_step.png)
+
+    ![](./docs/cd_step.png)
 2. Call *node index.js** to start the app.
-![](./docs/node_step.png)
+
+    ![](./docs/node_step.png)
 3. Start answering the questionarie to obtain your **README** file.
-![](./docs/start_step.png)
+
+    ![](./docs/start_step.png)
 
 ## **Questions**
 If you have any questions regarding this app, feel free to contact me through my email, the [README Generator Repo](https://github.com/SCastanedaMunoz/README-Generator). All questions will be answered in a reasonable amount of time.
