@@ -3,7 +3,7 @@
 # **README Generator**
 
 ## **Description**
-***README Generator*** is a **CLI** application intented to be used to create baseline **README** files for software projects. The main purpose of this CLI application is to reduce the time developers spend writting **README** files and allow them to use more of their time actually developing their apps!
+***README Generator*** is a **CLI** application intention is to create baseline **README** files for software projects. The main purpose of this CLI application is to cut the time developers spend writing **README** files and allow them to use more of their time actually developing their apps!
 
 ## **Table of Contents**
 * [Description](##Description)
@@ -15,10 +15,10 @@
 * [Questions](##Questions)
 
 ## **Installation**
-As of right now, the process to install ***README Generator*** is by downloading the Git Respository from the following GitHub Link: [README Generator Repo](https://github.com/SCastanedaMunoz/README-Generator), after doing so, you will have to open the project on your terminal and run the npm i or npm install process. This will fetch and install any required npm packages in order to run the application. Since this CLI application has been built utilizing **Node.js** and **npm**, you will need to have such dev dependencies alreary installed in your project. ***README Generator*** was built using **Node 12.8.2** and **npm 6.14.5**. In the future, this app will be distributed via npm for a more easy download and usage.
+As of right now, the process to install ***README Generator*** is by downloading the Git Repository from the following GitHub Link: [README Generator Repo](https://github.com/SCastanedaMunoz/README-Generator), after doing so, you will have to open the project on your terminal and run the *npm i* or *npm install* commmand. This will fetch and install any required npm packages in order to run the application. Since this CLI application was built utilizing **Node.js** and **npm**, you will need to have such dev dependencies already installed in your project. ***README Generator*** was built using **Node 12.8.2** and **npm 6.14.5**. In the future, this app will be distributed via npm for a more easy download and usage.
 
 ## **Usage**
-As mentioned before, The main purpose of this CLI application is to reduce the time developers spend writting **README** files and allow them to use more of their time actually developing their apps. Although, a lot of can be achieved by using this **CLI Application**, this is purely intented to create a well structured base for your **README** files, there is always room for improvement so do not take any outputs as a final product! Make your **README** files richer and better!
+As mentioned before, the main purpose of this CLI application is to cut the time developers spend writing **README** files and allow them to use more of their time actually developing their apps. Although, a lot of can be achieved by using this **CLI Application**, this is purely meant to create a well structured base for your **README** files, there is always room for improvement so do not take any outputs as a final version! Make your **README** files richer and better!
 
 Here is a Video Walkthrough on how to use the app: [Video Walkthrough.](https://drive.google.com/file/d/1M4yuWK0EnRpK7FxjzW89TGU2qR9TFmu3/view?usp=sharing)
 
@@ -48,7 +48,7 @@ If you wish to contribute to the project, make sure to read the following guidel
 * Create a pull request, after proper review it will be merged into the Git Repository
 
 ## **Tests**
-As of right now, the only way to test the application is by running the node index.js file which triggers the app main functionality. In the future, proper unit testing will be added to ensure proper Software Development practices.
+As of now, the only way to test the application is by running the node index.js file which triggers the app main functionality. In the future, proper unit testing will be added to ensure proper Software Development practices.
 
 See the following test instructions in order to test the app: 
 
