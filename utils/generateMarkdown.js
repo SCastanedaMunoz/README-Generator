@@ -15,7 +15,7 @@ function generateMarkdown(data) {
       licenseContents = licenseContents.replace("[yyyy]", currentDate.getFullYear());
       licenseContents = licenseContents.replace("[Copyright_Owner]", data.devname);
 
-      var markDownContent =
+      var markdownContent =
 `![License: ${data.license.name}](${data.license.badge})
 
 # **${data.title}**
@@ -58,7 +58,11 @@ https://github.com/${data.username}
 
 ### ***Email Contact***
 ${data.email}`;
-      resolve(markDownContent);
+      let ret = {
+        filename: data.filename,
+        markdown: markdownContent
+      }
+      resolve(ret);
     });
   });
 }

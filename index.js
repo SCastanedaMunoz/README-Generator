@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 
-// array of questions for user
+// Array of questions for user
 const questions = [
     {
         type: "input",
@@ -75,7 +75,7 @@ const questions = [
     }
 ];
 
-// function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
 
     const outputsDir = "./outputs";
@@ -98,14 +98,12 @@ function writeToFile(fileName, data) {
     });
 }
 
-// function to initialize program
+// Function to initialize program
 function init() {
     inquirer
         .prompt(questions)
-        .then(function (response) {
-            generateMarkdown(response)
-            .then((markDownContent) => writeToFile(response.filename, markDownContent));
-        });
+        .then(response => generateMarkdown(response))
+        .then(data => writeToFile(data.filename, data.markdown));
 }
 
 // function call to initialize program
@@ -128,4 +126,4 @@ init();
 // }
 
 // generateMarkdown(sample)
-// .then((markDownContent) => writeToFile(sample.filename, markDownContent));
+// .then((data) => writeToFile(data.filename, data.markdown));
